@@ -38,7 +38,7 @@ resource "aws_lb_target_group" "tlb" {
     timeout             = 5
     healthy_threshold   = 3
     unhealthy_threshold = 3
-    matcher             = "200-399"
+    matcher             = "200"
   }
 }
 
@@ -53,3 +53,4 @@ resource "aws_lb_listener" "lbl" {
     target_group_arn = aws_lb_target_group.tlb.arn
   }
 }
+
