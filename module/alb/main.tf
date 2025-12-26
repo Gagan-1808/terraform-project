@@ -33,7 +33,7 @@ resource "aws_lb_target_group" "tlb" {
   protocol = "HTTP"
   vpc_id   = var.vpc_id
   health_check {
-    path                = "/var/www/html/index.html"
+    path                = "/"
     interval            = 30
     timeout             = 5
     healthy_threshold   = 3
@@ -53,4 +53,5 @@ resource "aws_lb_listener" "lbl" {
     target_group_arn = aws_lb_target_group.tlb.arn
   }
 }
+
 
