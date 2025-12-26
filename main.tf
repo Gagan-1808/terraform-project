@@ -1,7 +1,7 @@
 module "vpc" {
   source = "./module/vpc"
   cidr   = "10.0.0.0/16"
-  azs    = ["ap-south-1a", "ap-south-2b"]
+  azs    = ["ap-south-1a", "ap-south-1b"]
 }
 
 module "alb" {
@@ -18,5 +18,6 @@ module "asg" {
   alb_sg_id       = module.alb.alb_sg_id
   ami_id          = "ami-02b8269d5e85954ef"
 }
+
 
 
