@@ -74,6 +74,14 @@ terraform apply
 
 - You will be prompted to confirm; type yes to proceed.
 
+## 6. Verify the load balancer is created and target group are healthy.  
+<img width="940" height="219" alt="image" src="https://github.com/user-attachments/assets/1599cebf-9ec8-4112-b374-d1ddfe66484d" />
+
+
+## 7. Browser output:
+<img width="1366" height="700" alt="image" src="https://github.com/user-attachments/assets/5b5a6450-f513-4acc-9541-cd1d68b3aad0" />
+
+
 ## Optional: Destroy Infrastructure
 
 - When you want to remove all resources created by Terraform:
