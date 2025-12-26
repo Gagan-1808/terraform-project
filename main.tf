@@ -16,6 +16,7 @@ module "asg" {
   private_subnets = module.vpc.private_subnets
   target_group_arn = module.alb.target_group_arn
   alb_sg_id       = module.alb.alb_sg_id
-  ami_id          = "ami-0cfde0ea8edd312d4"
+  ami_id          = "ami-02b8269d5e85954ef"
 }
+
 
